@@ -1,0 +1,15 @@
+CCMenuAdvanced adds these features to CCMenu:
+		1) Selecting and activating CCMenuItems with Keyboard 
+(by default next/prev bindings aren't set - set them manually or use one of align methods to bind arrows for this).
+		2) One of CCMenuItems can be set as escapeDelegate - so it will be activated by pressing escape (useful for back/cancel button, this CCMenuItem escapeDelegate can be even child of other CCMenu)
+		3) align left->right, right->left, bottom->top, top->bottom with autosetting self contentSize (useful with relativeAnchorPoint=YES to use menu as sprite, not strange-fullscreen-node)
+		4) externalBoundsRect - if it is set then menu items will be scrollable inside these bounds
+
+CCMenuAdvanced lacks these features:
+	1) rows and columns alignment with automatic contentSize set ( cause i use only vertical/horizontal alignment in iTraceur)
+	2) any other cocos orientation than portrait (cause i use UIViewController on iOS to handle orientations)
+	3) Other features you need ;)
+
+Right now CCMenuAdvanced has everything i need for iTraceur. It should be easy to
+add CCMenuAdvanced to CCMenu as a patch, not a subclass, but i don't have time now for this, so feel
+free to improve it and made a pull request to cocos2d instead of me ;)

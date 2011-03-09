@@ -36,6 +36,8 @@
 @implementation CCMenuAdvanced
 @synthesize boundaryRect = boundaryRect_;
 @synthesize minimumTouchLengthToSlide = minimumTouchLengthToSlide_;
+@synthesize priority = priority_;
+
 
 -(id) initWithItems: (CCMenuItem*) item vaList: (va_list) args
 {
@@ -58,6 +60,21 @@
 #endif
 	[super dealloc];
 }
+
+#pragma mark Advanced Menu - Priority
+-(NSInteger) mouseDelegatePriority
+{
+	return priority_;
+}
+
+#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
+-(void) registerWithTouchDispatcher
+{
+	[[CCTouchDispatcher sharedDispatcher] addTargetedDelegate: self 
+													 priority:[self mouseDelegatePriority] 
+											  swallowsTouches: YES ];
+}
+#endif
 
 #pragma mark Advanced Menu - Selecting/Activating Items
 
@@ -406,11 +423,9 @@
 		// get touch move delta 
 		CGPoint point = [touch locationInView: [touch view]];
 		CGPoint prevPoint = [ touch previousLocationInView: [touch view] ];	
-		CGPoint delta = ccpSub(prevPoint, point);
-		delta.x = - delta.x; //< TODO: Add support for other orientations
-		// Right now valid for kCCDeviceOrientationPortrait with
-		// openGLViewFrame = CGRectMake(0,0,aWindow.frame.size.height,aWindow.frame.size.width)
-		// and UIViewController that allows both Landscapes orientation. Other orientations not supported yet.
+		point =  [ [CCDirector sharedDirector] convertToGL: point ];
+		prevPoint =  [ [CCDirector sharedDirector] convertToGL: prevPoint ];
+		CGPoint delta = ccpSub(point, prevPoint);
 		
 		curTouchLength_ += ccpLength( delta ); 
 		

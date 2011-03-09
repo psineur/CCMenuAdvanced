@@ -14,10 +14,10 @@ Main features
 * One of CCMenuItems can be set as escapeDelegate - so it will be activated by pressing escape (useful for back/cancel button, this CCMenuItem escapeDelegate can be even child of other CCMenu)
 * align left->right, right->left, bottom->top, top->bottom with autosetting self contentSize (useful with relativeAnchorPoint=YES to use menu as sprite, not strange-fullscreen-node)
 * externalBoundsRect - if it is set then menu items will be scrollable inside these bounds
+* priority property - for mouse and touch - must be set before onEnter to register with new priority
 
 TODO:
 -------------
 * Rows and columns alignment with automatic contentSize set ( cause i use only vertical/horizontal alignment in iTraceur)
-* Support any other cocos orientation than portrait (cause i use UIViewController on iOS to handle orientations)
 * Other features you need ;)
  

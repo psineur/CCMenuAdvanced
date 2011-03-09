@@ -23,8 +23,10 @@
 //		2) One of CCMenuItems can be set as escapeDelegate - so it will be activated by pressing escape
 //		3) align left->right, right->left, bottom->top, top->bottom with autosetting self contentSize
 //		4) externalBoundsRect - if it is set then menu items will be scrollable inside these bounds
+//		5) priority property - must be set before onEnter to make it register with that priority
 @interface CCMenuAdvanced : CCMenu  
 {
+	NSInteger priority_;
 	int selectedItemNumber_;
 	
 	CGRect boundaryRect_; //< external boundaries in which menu can slide
@@ -42,6 +44,7 @@
 
 @property(readwrite, assign) CGRect boundaryRect;
 @property(readwrite, assign) CGFloat minimumTouchLengthToSlide;
+@property(readwrite, assign) NSInteger priority;
 
 #ifdef __MAC_OS_X_VERSION_MAX_ALLOWED
 @property(readwrite, retain) CCMenuItem *escapeDelegate;

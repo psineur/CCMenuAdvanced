@@ -8,6 +8,7 @@
 
 #import "DemoMenu2.h"
 #import "CCMenuAdvanced.h"
+#import "DemoMenu.h"
 
 @interface DemoMenu2 (Private)
 
@@ -208,6 +209,26 @@
 	NSLog(@"DemoMenu2#itemPressed: %@", sender);
 }
 
-
+// I like to use GameDirector for calls from menus (such as buttons pressed)
+// but here is too simple example or this, so i will just import DemoMenu to DemoMenu2.h
+// and change scene right from here
+//
+// But it's recommended to have something like GameManager class, and 
+// all Scene changes must be called only from there
+- (void) backPressed
+{	
+	// 'scene' is an autorelease object.
+	CCScene *scene = [CCScene node];
+	
+	// Add Demo Menu
+	DemoMenu *menu = [DemoMenu node];
+	menu.anchorPoint = menu.position = ccp(0,0);
+	
+	// add layer as a child to scene
+	[scene addChild: menu];
+	
+	// change scene
+	[[CCDirector sharedDirector] replaceScene: scene];
+}
 
 @end

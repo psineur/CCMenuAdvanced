@@ -7,6 +7,9 @@
 //
 
 #import "DemoMenu.h"
+#import "CCMenuAdvanced.h"
+#import "CCMenuEditor.h"
+#import "CCMenuItemSpriteIndependent.h"
 
 
 @implementation DemoMenu
@@ -100,13 +103,112 @@
 
 - (id) init
 {
-	if ( (self = [super init]) )
+	if (self = [super init])
 	{
-		//TODO: init widget here
-	}
+		// Be sure to have needed Sprites Frames loaded
+		[[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile: @"allDemoElements.plist"
+																 textureFile: @"allDemoElements.png" ];
+		
+		// Get all universal sprites
+		CCSprite *dummyButton1 = [CCSprite spriteWithSpriteFrameName:@"dummyButton1.png"];
+		CCSprite *dummyButton1Selected = [CCSprite spriteWithSpriteFrameName:@"dummyButton1Selected.png"];
+		
+		CCSprite *dummyButton2 = [CCSprite spriteWithSpriteFrameName:@"dummyButton2.png"];
+		CCSprite *dummyButton2Selected = [CCSprite spriteWithSpriteFrameName:@"dummyButton2Selected.png"];
+		
+		CCSprite *listButton = [CCSprite spriteWithSpriteFrameName:@"listButton.png"];
+		CCSprite *listButtonSelected = [CCSprite spriteWithSpriteFrameName:@"listButtonSelected.png"];		
+		
 
+		
+		// Prepare Universal Menu Items
+		CCMenuItemSpriteIndependent *dummyMenuItem1 = 
+		[CCMenuItemSpriteIndependent itemFromNormalSprite: dummyButton1
+										   selectedSprite: dummyButton1Selected
+												   target: self
+												 selector: @selector(dummyButton1Pressed)
+		 ];
+		
+		CCMenuItemSpriteIndependent *dummyMenuItem2 = 
+		[CCMenuItemSpriteIndependent itemFromNormalSprite: dummyButton2
+										   selectedSprite: dummyButton2Selected
+												   target: self
+												 selector: @selector(dummyButton2Pressed)
+		 ];
+		
+		CCMenuItemSpriteIndependent *listMenuItem = 
+		[CCMenuItemSpriteIndependent itemFromNormalSprite: listButton
+										   selectedSprite: listButtonSelected
+												   target: self
+												 selector: @selector(listButtonPressed)
+		 ];
+		
+				
+				
+		// Layout Menu Items
+		self.contentSize = CGSizeMake(410, 277); 
+		//< well, this is bad. CCMenuEditor doesn't give me info about xcf size, so it's hardcoded.
+		//< I should add size of xcf into xcf2sprites or use another editor. Looking forward to CocosBuilder ;)
+		
+		CCMenuEditor *editor = [CCMenuEditor menuEditorWithPropertyListName:@"demoMenuWidgetLayout"];
+		//< note .plist extension not required 
+		
+		// position menu items from normal sprite position in xcf
+		dummyMenuItem1.position = [editor positionForElementWithName: @"dummyButton1.png"];
+		dummyMenuItem2.position = [editor positionForElementWithName: @"dummyButton2.png"];
+		listMenuItem.position = [editor positionForElementWithName: @"listButton.png"];
+		
+		
+		// position normal independent sprites at the same points
+		dummyButton1.position = [editor positionForElementWithName: @"dummyButton1.png"];
+		dummyButton2.position = [editor positionForElementWithName: @"dummyButton2.png"];
+		listButton.position = [editor positionForElementWithName: @"listButton.png"];
+		
+		// position selected independent sprites at their positions (other that normal, cause they have different sizes)
+		dummyButton1Selected.position = [editor positionForElementWithName: @"dummyButton1Selected.png"];
+		dummyButton2Selected.position = [editor positionForElementWithName: @"dummyButton2Selected.png"];
+		listButtonSelected.position = [editor positionForElementWithName: @"listButtonSelected.png"];
+		
+		// add independent sprites as children, cause MenuItem only retains them, not adding
+		[self addChild: dummyButton1];
+		[self addChild: dummyButton1Selected];
+		[self addChild: dummyButton2];
+		[self addChild: dummyButton2Selected];		
+		[self addChild: listButton];		
+		[self addChild: listButtonSelected];
+		
+		
+		// Create CCMenuAdvanced
+		CCMenuAdvanced *menu = [CCMenuAdvanced menuWithItems: dummyMenuItem1, dummyMenuItem2, listMenuItem, nil];
+		menu.anchorPoint = ccp(0,0);
+		menu.position = ccp(0,0);
+		
+		//add keyboard bindings for mac
+#if defined(__MAC_OS_X_VERSION_MAX_ALLOWED)
+		menu.nextItemButtonBind = NSDownArrowFunctionKey;
+		menu.prevItemButtonBind = NSUpArrowFunctionKey;
+#endif
+		
+		[self addChild: menu];
+		
+	}
+	
 	return self;
 }
-	
+
+- (void) dummyButton1Pressed
+{
+	NSLog(@"dummy button 1 pressed");
+}
+
+- (void) dummyButton2Pressed
+{
+	NSLog(@"dummy button 2 (TWO) pressed");
+}
+
+- (void) listButtonPressed
+{
+	//TODO: change scene to list demo menu
+}
 
 @end

@@ -23,13 +23,33 @@
 	// EXPERIMENTAL stuff.
 	// 'Effects' don't work correctly when autoscale is turned on.
 	// Use kCCDirectorResize_NoScale if you don't want auto-scaling.
-	[director setResizeMode:kCCDirectorResize_AutoScale];
+	[director setResizeMode:kCCDirectorResize_NoScale];
 	
 	// Enable "moving" mouse event. Default no.
 	[window_ setAcceptsMouseMovedEvents:NO];
 	
+	// Start listening to resizeWindow notification
+	[director.openGLView setPostsFrameChangedNotifications: YES];
+	[[NSNotificationCenter defaultCenter] addObserver: self
+											 selector: @selector(updateForScreenReshape:) 
+												 name: NSViewFrameDidChangeNotification 
+											   object: director.openGLView];
+	
 	
 	[director runWithScene:[HelloWorldLayer scene]];
+}
+
+
+- (void) updateForScreenReshape: (NSNotification *) aNotification
+{
+	CCScene *curScene = [[CCDirector sharedDirector] runningScene];
+	
+	if (curScene)
+	{
+		for (CCNode *child in curScene.children)
+			if ([child respondsToSelector:@selector(updateForScreenReshape)])
+				[child performSelector:@selector(updateForScreenReshape)];
+	}
 }
 
 - (BOOL) applicationShouldTerminateAfterLastWindowClosed: (NSApplication *) theApplication
@@ -39,6 +59,8 @@
 
 - (void)dealloc
 {
+	[[NSNotificationCenter defaultCenter] removeObserver: self];
+	
 	[[CCDirector sharedDirector] release];
 	[window_ release];
 	[super dealloc];
@@ -50,6 +72,8 @@
 {
 	CCDirectorMac *director = (CCDirectorMac*) [CCDirector sharedDirector];
 	[director setFullScreen: ! [director isFullScreen] ];
+	
+	[self updateForScreenReshape: nil];
 }
 
 @end

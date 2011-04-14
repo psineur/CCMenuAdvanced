@@ -50,6 +50,16 @@
 		50F414F11069373D002A0D5E /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414ED1069373D002A0D5E /* fps_images.png */; };
 		50F414F21069373D002A0D5E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414EE1069373D002A0D5E /* Icon.png */; };
 		6D78CB7813569C68007F0032 /* CCMenuAdvanced.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78CB7713569C68007F0032 /* CCMenuAdvanced.m */; };
+		6D78CD0B1356D737007F0032 /* CCMenuEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78CD081356D737007F0032 /* CCMenuEditor.m */; };
+		6D78CD0C1356D737007F0032 /* CCMenuItemSpriteIndependent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78CD0A1356D737007F0032 /* CCMenuItemSpriteIndependent.m */; };
+		6D78CD191356D766007F0032 /* DemoMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78CD141356D766007F0032 /* DemoMenu.m */; };
+		6D78CD1A1356D766007F0032 /* DemoMenu2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78CD161356D766007F0032 /* DemoMenu2.m */; };
+		6D78CD1B1356D766007F0032 /* GenericDemoMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78CD181356D766007F0032 /* GenericDemoMenu.m */; };
+		6D78CD2E1356D784007F0032 /* allDemoElements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D78CD291356D784007F0032 /* allDemoElements.plist */; };
+		6D78CD2F1356D784007F0032 /* allDemoElements.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D78CD2A1356D784007F0032 /* allDemoElements.png */; };
+		6D78CD301356D784007F0032 /* crackedGradient42.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 6D78CD2B1356D784007F0032 /* crackedGradient42.fnt */; };
+		6D78CD311356D784007F0032 /* crackedGradient42.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D78CD2C1356D784007F0032 /* crackedGradient42.png */; };
+		6D78CD321356D784007F0032 /* demoMenuWidgetLayout.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D78CD2D1356D784007F0032 /* demoMenuWidgetLayout.plist */; };
 		DC6640030F83B3EA000B3E49 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */; };
 		DC6640050F83B3EA000B3E49 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640040F83B3EA000B3E49 /* OpenAL.framework */; };
 		DCCBF1B70F6022AE0040855A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */; };
@@ -253,8 +263,8 @@
 
 /* Begin PBXFileReference section */
 		1D6058910D05DD3D006BFB54 /* CCMenuAdvanced.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCMenuAdvanced.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F3B9A2B0EF2145700286867 /* CCMenuAdvancedAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCMenuAdvancedAppDelegate.m; path = Classes/CCMenuAdvancedAppDelegate.m; sourceTree = SOURCE_ROOT; };
-		1F3B9A2C0EF2145700286867 /* CCMenuAdvancedAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCMenuAdvancedAppDelegate.h; path = Classes/CCMenuAdvancedAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		1F3B9A2B0EF2145700286867 /* CCMenuAdvancedAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMenuAdvancedAppDelegate.m; sourceTree = "<group>"; };
+		1F3B9A2C0EF2145700286867 /* CCMenuAdvancedAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMenuAdvancedAppDelegate.h; sourceTree = "<group>"; };
 		1F3B9A820EF2151B00286867 /* CCMenuAdvanced_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMenuAdvanced_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScoreServerPost.h; sourceTree = "<group>"; };
@@ -296,6 +306,21 @@
 		50F414EF1069373D002A0D5E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D78CB7613569C68007F0032 /* CCMenuAdvanced.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMenuAdvanced.h; sourceTree = "<group>"; };
 		6D78CB7713569C68007F0032 /* CCMenuAdvanced.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMenuAdvanced.m; sourceTree = "<group>"; };
+		6D78CD071356D737007F0032 /* CCMenuEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMenuEditor.h; sourceTree = "<group>"; };
+		6D78CD081356D737007F0032 /* CCMenuEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMenuEditor.m; sourceTree = "<group>"; };
+		6D78CD091356D737007F0032 /* CCMenuItemSpriteIndependent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMenuItemSpriteIndependent.h; sourceTree = "<group>"; };
+		6D78CD0A1356D737007F0032 /* CCMenuItemSpriteIndependent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMenuItemSpriteIndependent.m; sourceTree = "<group>"; };
+		6D78CD131356D766007F0032 /* DemoMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMenu.h; sourceTree = "<group>"; };
+		6D78CD141356D766007F0032 /* DemoMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoMenu.m; sourceTree = "<group>"; };
+		6D78CD151356D766007F0032 /* DemoMenu2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMenu2.h; sourceTree = "<group>"; };
+		6D78CD161356D766007F0032 /* DemoMenu2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoMenu2.m; sourceTree = "<group>"; };
+		6D78CD171356D766007F0032 /* GenericDemoMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericDemoMenu.h; sourceTree = "<group>"; };
+		6D78CD181356D766007F0032 /* GenericDemoMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericDemoMenu.m; sourceTree = "<group>"; };
+		6D78CD291356D784007F0032 /* allDemoElements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = allDemoElements.plist; sourceTree = "<group>"; };
+		6D78CD2A1356D784007F0032 /* allDemoElements.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = allDemoElements.png; sourceTree = "<group>"; };
+		6D78CD2B1356D784007F0032 /* crackedGradient42.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crackedGradient42.fnt; sourceTree = "<group>"; };
+		6D78CD2C1356D784007F0032 /* crackedGradient42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crackedGradient42.png; sourceTree = "<group>"; };
+		6D78CD2D1356D784007F0032 /* demoMenuWidgetLayout.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = demoMenuWidgetLayout.plist; sourceTree = "<group>"; };
 		DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DC6640040F83B3EA000B3E49 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -578,13 +603,8 @@
 			children = (
 				6D78CB7613569C68007F0032 /* CCMenuAdvanced.h */,
 				6D78CB7713569C68007F0032 /* CCMenuAdvanced.m */,
-				E0F80F5D120A0182005866B8 /* GameConfig.h */,
-				506EDC2F102F528A00A389B3 /* HelloWorldLayer.h */,
-				506EDC30102F528A00A389B3 /* HelloWorldLayer.m */,
-				E0F80F5E120A0182005866B8 /* RootViewController.h */,
-				E0F80F5F120A0182005866B8 /* RootViewController.m */,
-				1F3B9A2C0EF2145700286867 /* CCMenuAdvancedAppDelegate.h */,
-				1F3B9A2B0EF2145700286867 /* CCMenuAdvancedAppDelegate.m */,
+				6D78CD0D1356D73F007F0032 /* Other Engine Extensions */,
+				6D78CCFD1356D703007F0032 /* Demo Classes */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -654,6 +674,11 @@
 		50F414EB1069373D002A0D5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6D78CD291356D784007F0032 /* allDemoElements.plist */,
+				6D78CD2A1356D784007F0032 /* allDemoElements.png */,
+				6D78CD2B1356D784007F0032 /* crackedGradient42.fnt */,
+				6D78CD2C1356D784007F0032 /* crackedGradient42.png */,
+				6D78CD2D1356D784007F0032 /* demoMenuWidgetLayout.plist */,
 				E02BB762126CC1E0006E46A2 /* iTunesArtwork */,
 				E02BB4FE126CA50F006E46A2 /* Icon@2x.png */,
 				E02BB4FF126CA50F006E46A2 /* Icon-Small@2x.png */,
@@ -666,6 +691,37 @@
 				50F414EF1069373D002A0D5E /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		6D78CCFD1356D703007F0032 /* Demo Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E0F80F5D120A0182005866B8 /* GameConfig.h */,
+				506EDC2F102F528A00A389B3 /* HelloWorldLayer.h */,
+				506EDC30102F528A00A389B3 /* HelloWorldLayer.m */,
+				E0F80F5E120A0182005866B8 /* RootViewController.h */,
+				E0F80F5F120A0182005866B8 /* RootViewController.m */,
+				1F3B9A2C0EF2145700286867 /* CCMenuAdvancedAppDelegate.h */,
+				1F3B9A2B0EF2145700286867 /* CCMenuAdvancedAppDelegate.m */,
+				6D78CD131356D766007F0032 /* DemoMenu.h */,
+				6D78CD141356D766007F0032 /* DemoMenu.m */,
+				6D78CD151356D766007F0032 /* DemoMenu2.h */,
+				6D78CD161356D766007F0032 /* DemoMenu2.m */,
+				6D78CD171356D766007F0032 /* GenericDemoMenu.h */,
+				6D78CD181356D766007F0032 /* GenericDemoMenu.m */,
+			);
+			name = "Demo Classes";
+			sourceTree = "<group>";
+		};
+		6D78CD0D1356D73F007F0032 /* Other Engine Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6D78CD071356D737007F0032 /* CCMenuEditor.h */,
+				6D78CD081356D737007F0032 /* CCMenuEditor.m */,
+				6D78CD091356D737007F0032 /* CCMenuItemSpriteIndependent.h */,
+				6D78CD0A1356D737007F0032 /* CCMenuItemSpriteIndependent.m */,
+			);
+			name = "Other Engine Extensions";
 			sourceTree = "<group>";
 		};
 		E02BB764126CC223006E46A2 /* cocos2d */ = {
@@ -1102,6 +1158,11 @@
 				E02BB507126CA50F006E46A2 /* Icon-Small-50.png in Resources */,
 				E02BB508126CA50F006E46A2 /* Icon-72.png in Resources */,
 				E02BB763126CC1E0006E46A2 /* iTunesArtwork in Resources */,
+				6D78CD2E1356D784007F0032 /* allDemoElements.plist in Resources */,
+				6D78CD2F1356D784007F0032 /* allDemoElements.png in Resources */,
+				6D78CD301356D784007F0032 /* crackedGradient42.fnt in Resources */,
+				6D78CD311356D784007F0032 /* crackedGradient42.png in Resources */,
+				6D78CD321356D784007F0032 /* demoMenuWidgetLayout.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1117,6 +1178,11 @@
 				506EDC31102F528A00A389B3 /* HelloWorldLayer.m in Sources */,
 				E0F80F60120A0182005866B8 /* RootViewController.m in Sources */,
 				6D78CB7813569C68007F0032 /* CCMenuAdvanced.m in Sources */,
+				6D78CD0B1356D737007F0032 /* CCMenuEditor.m in Sources */,
+				6D78CD0C1356D737007F0032 /* CCMenuItemSpriteIndependent.m in Sources */,
+				6D78CD191356D766007F0032 /* DemoMenu.m in Sources */,
+				6D78CD1A1356D766007F0032 /* DemoMenu2.m in Sources */,
+				6D78CD1B1356D766007F0032 /* GenericDemoMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

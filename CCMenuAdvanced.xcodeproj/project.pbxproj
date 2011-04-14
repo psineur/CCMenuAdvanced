@@ -60,6 +60,8 @@
 		6D78CD301356D784007F0032 /* crackedGradient42.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 6D78CD2B1356D784007F0032 /* crackedGradient42.fnt */; };
 		6D78CD311356D784007F0032 /* crackedGradient42.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D78CD2C1356D784007F0032 /* crackedGradient42.png */; };
 		6D78CD321356D784007F0032 /* demoMenuWidgetLayout.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D78CD2D1356D784007F0032 /* demoMenuWidgetLayout.plist */; };
+		6D78CD7D1356E06F007F0032 /* crackedGradient42-hd.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 6D78CD7B1356E06F007F0032 /* crackedGradient42-hd.fnt */; };
+		6D78CD7E1356E06F007F0032 /* crackedGradient42-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D78CD7C1356E06F007F0032 /* crackedGradient42-hd.png */; };
 		DC6640030F83B3EA000B3E49 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */; };
 		DC6640050F83B3EA000B3E49 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640040F83B3EA000B3E49 /* OpenAL.framework */; };
 		DCCBF1B70F6022AE0040855A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */; };
@@ -321,6 +323,8 @@
 		6D78CD2B1356D784007F0032 /* crackedGradient42.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crackedGradient42.fnt; sourceTree = "<group>"; };
 		6D78CD2C1356D784007F0032 /* crackedGradient42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crackedGradient42.png; sourceTree = "<group>"; };
 		6D78CD2D1356D784007F0032 /* demoMenuWidgetLayout.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = demoMenuWidgetLayout.plist; sourceTree = "<group>"; };
+		6D78CD7B1356E06F007F0032 /* crackedGradient42-hd.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "crackedGradient42-hd.fnt"; sourceTree = "<group>"; };
+		6D78CD7C1356E06F007F0032 /* crackedGradient42-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crackedGradient42-hd.png"; sourceTree = "<group>"; };
 		DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DC6640040F83B3EA000B3E49 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -674,6 +678,8 @@
 		50F414EB1069373D002A0D5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6D78CD7B1356E06F007F0032 /* crackedGradient42-hd.fnt */,
+				6D78CD7C1356E06F007F0032 /* crackedGradient42-hd.png */,
 				6D78CD291356D784007F0032 /* allDemoElements.plist */,
 				6D78CD2A1356D784007F0032 /* allDemoElements.png */,
 				6D78CD2B1356D784007F0032 /* crackedGradient42.fnt */,
@@ -1163,6 +1169,8 @@
 				6D78CD301356D784007F0032 /* crackedGradient42.fnt in Resources */,
 				6D78CD311356D784007F0032 /* crackedGradient42.png in Resources */,
 				6D78CD321356D784007F0032 /* demoMenuWidgetLayout.plist in Resources */,
+				6D78CD7D1356E06F007F0032 /* crackedGradient42-hd.fnt in Resources */,
+				6D78CD7E1356E06F007F0032 /* crackedGradient42-hd.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,7 @@
 //  Copyright 2011 Parkour Games. All rights reserved.
 //
 
-#import "CCMenu.h"
+#import "cocos2d.h"
 
 @interface NSString (UnicharExtensions)
 

@@ -41,7 +41,7 @@
 
 -(id) initWithItems: (CCMenuItem*) item vaList: (va_list) args
 {
-	if (self = [super initWithItems:item vaList:args])
+	if ( (self = [super initWithItems:item vaList:args]) )
 	{
 		selectedItemNumber_ = -1;
 		self.boundaryRect = CGRectNull;

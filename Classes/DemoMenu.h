@@ -11,7 +11,8 @@
 
 @class DemoMenuWidget;
 
-// Main Demo Menu Node
+// Main Demo Menu Node - demonstration of how universal menu screen can be created 
+// as subclass of CCNode
 @interface DemoMenu : CCNode 
 {
 	// weak refs of node childs

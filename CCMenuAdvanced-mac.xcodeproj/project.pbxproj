@@ -17,6 +17,8 @@
 		6D78CC3F1356C2E6007F0032 /* CCMenuEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78CC3C1356C2E6007F0032 /* CCMenuEditor.m */; };
 		6D78CC401356C2E6007F0032 /* CCMenuItemSpriteIndependent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78CC3E1356C2E6007F0032 /* CCMenuItemSpriteIndependent.m */; };
 		6D78CC501356C39B007F0032 /* CCMenuAdvanced.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78CC4F1356C39B007F0032 /* CCMenuAdvanced.m */; };
+		6D78CC601356C7DC007F0032 /* GenericDemoMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78CC5F1356C7DC007F0032 /* GenericDemoMenu.m */; };
+		6D78CC691356CA0C007F0032 /* DemoMenu2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78CC681356CA0C007F0032 /* DemoMenu2.m */; };
 		E01E6A3E121EDCD3001A484F /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01E6A3D121EDCD3001A484F /* ApplicationServices.framework */; };
 		E01E6B36121EDCED001A484F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E036A79E121B5C870037C5C6 /* QuartzCore.framework */; };
 		E01E6B49121EDCF4001A484F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E036A79C121B5C720037C5C6 /* OpenGL.framework */; };
@@ -215,6 +217,10 @@
 		6D78CC3E1356C2E6007F0032 /* CCMenuItemSpriteIndependent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMenuItemSpriteIndependent.m; sourceTree = "<group>"; };
 		6D78CC4E1356C39B007F0032 /* CCMenuAdvanced.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMenuAdvanced.h; sourceTree = "<group>"; };
 		6D78CC4F1356C39B007F0032 /* CCMenuAdvanced.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMenuAdvanced.m; sourceTree = "<group>"; };
+		6D78CC5E1356C7DC007F0032 /* GenericDemoMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericDemoMenu.h; sourceTree = "<group>"; };
+		6D78CC5F1356C7DC007F0032 /* GenericDemoMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericDemoMenu.m; sourceTree = "<group>"; };
+		6D78CC671356CA0C007F0032 /* DemoMenu2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMenu2.h; sourceTree = "<group>"; };
+		6D78CC681356CA0C007F0032 /* DemoMenu2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoMenu2.m; sourceTree = "<group>"; };
 		E01E663D121CA00A001A484F /* libcocos2d.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcocos2d.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01E6A3D121EDCD3001A484F /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		E02A83D2129F000100341C97 /* CCMenuAdvanced_macAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMenuAdvanced_macAppDelegate.h; sourceTree = "<group>"; };
@@ -513,6 +519,10 @@
 				E0507117131760D700EAE33F /* HelloWorldLayer.m */,
 				6D78CC2C1356B8E9007F0032 /* DemoMenu.h */,
 				6D78CC2D1356B8E9007F0032 /* DemoMenu.m */,
+				6D78CC5E1356C7DC007F0032 /* GenericDemoMenu.h */,
+				6D78CC5F1356C7DC007F0032 /* GenericDemoMenu.m */,
+				6D78CC671356CA0C007F0032 /* DemoMenu2.h */,
+				6D78CC681356CA0C007F0032 /* DemoMenu2.m */,
 				E02A83D2129F000100341C97 /* CCMenuAdvanced_macAppDelegate.h */,
 				E02A83D3129F000100341C97 /* CCMenuAdvanced_macAppDelegate.m */,
 			);
@@ -982,6 +992,8 @@
 				6D78CC3F1356C2E6007F0032 /* CCMenuEditor.m in Sources */,
 				6D78CC401356C2E6007F0032 /* CCMenuItemSpriteIndependent.m in Sources */,
 				6D78CC501356C39B007F0032 /* CCMenuAdvanced.m in Sources */,
+				6D78CC601356C7DC007F0032 /* GenericDemoMenu.m in Sources */,
+				6D78CC691356CA0C007F0032 /* DemoMenu2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,7 +4,9 @@ CCMenuAdvanced
 CCMenuAdvanced is CCMenu with keyboard support for Mac (esc/arrows/enter), a little bit different alignment options,
 and possibility to slide.It should be easy to add CCMenuAdvanced to CCMenu as a patch, not a subclass.
 I don't know when i will have time to prepare it for pull request to cocos2d, so feel free to do it instead of me ;)
-Short video demo: http://dl.getdropbox.com/u/1765875/CCMenuAdvanced.MOV
+
+Short video demo: [CCMenuAdvanced.MOV](http://dl.getdropbox.com/u/1765875/CCMenuAdvanced.MOV "CCMenuAdvanced video demo")
+Screenshots: [Wiki/Sreenshots](https://github.com/psineur/CCMenuAdvanced/wiki/Screenshots "Screenshots" )
 
 
 Main features
@@ -15,6 +17,12 @@ Main features
 * align left->right, right->left, bottom->top, top->bottom with autosetting self contentSize (useful with relativeAnchorPoint=YES to use menu as sprite, not strange-fullscreen-node)
 * externalBoundsRect - if it is set then menu items will be scrollable inside these bounds
 * priority property - for mouse and touch - must be set before onEnter to register with new priority
+
+Demo features
+-------------
+* Universal Mac / iPad / iPhone / Retina project
+* Demonstrates also how to use CCMenuItemSpriteIndependent with Gimp & xcftools
+* contains xcf2sprites, source: https://gist.github.com/886100 original xcfinfo source:http://henning.makholm.net/software
 
 TODO:
 -------------

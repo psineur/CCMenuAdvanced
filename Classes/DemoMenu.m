@@ -10,6 +10,7 @@
 #import "CCMenuAdvanced.h"
 #import "CCMenuEditor.h"
 #import "CCMenuItemSpriteIndependent.h"
+#import "DemoMenu2.h"
 
 
 @implementation DemoMenu
@@ -208,7 +209,20 @@
 
 - (void) listButtonPressed
 {
-	//TODO: change scene to list demo menu
+	// change to DemoMenu2
+	// It's better to change scene in GameManager, but here i use this for fast code
+	// 'scene' is an autorelease object.
+	CCScene *scene = [CCScene node];
+	
+	// Add Demo Menu
+	DemoMenu2 *menu = [DemoMenu2 node];
+	menu.anchorPoint = menu.position = ccp(0,0);
+	
+	// add layer as a child to scene
+	[scene addChild: menu];
+	
+	// change scene
+	[[CCDirector sharedDirector] replaceScene: scene];
 }
 
 @end

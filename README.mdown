@@ -22,7 +22,7 @@ Demo features
 -------------
 * Universal Mac / iPad / iPhone / Retina project
 * Demonstrates also how to use CCMenuItemSpriteIndependent with Gimp & xcftools
-* contains xcf2sprites, source: https://gist.github.com/886100 original xcfinfo source:http://henning.makholm.net/software
+* contains xcf2sprites, [source](https://gist.github.com/886100 "xcf2sprites source")  original xcfinfo source: [xcftools](http://henning.makholm.net/software "Henning Makholm.net xcftools")
 
 TODO:
 -------------

@@ -13,6 +13,7 @@
 		6D78CC261356B376007F0032 /* crackedGradient42.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 6D78CC221356B376007F0032 /* crackedGradient42.fnt */; };
 		6D78CC271356B376007F0032 /* crackedGradient42.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D78CC231356B376007F0032 /* crackedGradient42.png */; };
 		6D78CC291356B879007F0032 /* demoMenuWidgetLayout.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D78CC281356B879007F0032 /* demoMenuWidgetLayout.plist */; };
+		6D78CC2E1356B8E9007F0032 /* DemoMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78CC2D1356B8E9007F0032 /* DemoMenu.m */; };
 		E01E6A3E121EDCD3001A484F /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01E6A3D121EDCD3001A484F /* ApplicationServices.framework */; };
 		E01E6B36121EDCED001A484F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E036A79E121B5C870037C5C6 /* QuartzCore.framework */; };
 		E01E6B49121EDCF4001A484F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E036A79C121B5C720037C5C6 /* OpenGL.framework */; };
@@ -203,6 +204,8 @@
 		6D78CC221356B376007F0032 /* crackedGradient42.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = crackedGradient42.fnt; path = Resources/crackedGradient42.fnt; sourceTree = "<group>"; };
 		6D78CC231356B376007F0032 /* crackedGradient42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crackedGradient42.png; path = Resources/crackedGradient42.png; sourceTree = "<group>"; };
 		6D78CC281356B879007F0032 /* demoMenuWidgetLayout.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = demoMenuWidgetLayout.plist; path = Resources/demoMenuWidgetLayout.plist; sourceTree = "<group>"; };
+		6D78CC2C1356B8E9007F0032 /* DemoMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMenu.h; sourceTree = "<group>"; };
+		6D78CC2D1356B8E9007F0032 /* DemoMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoMenu.m; sourceTree = "<group>"; };
 		E01E663D121CA00A001A484F /* libcocos2d.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcocos2d.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01E6A3D121EDCD3001A484F /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		E02A83D2129F000100341C97 /* CCMenuAdvanced_macAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMenuAdvanced_macAppDelegate.h; sourceTree = "<group>"; };
@@ -488,6 +491,8 @@
 			children = (
 				E0507116131760D700EAE33F /* HelloWorldLayer.h */,
 				E0507117131760D700EAE33F /* HelloWorldLayer.m */,
+				6D78CC2C1356B8E9007F0032 /* DemoMenu.h */,
+				6D78CC2D1356B8E9007F0032 /* DemoMenu.m */,
 				E02A83D2129F000100341C97 /* CCMenuAdvanced_macAppDelegate.h */,
 				E02A83D3129F000100341C97 /* CCMenuAdvanced_macAppDelegate.m */,
 			);
@@ -942,6 +947,7 @@
 				E02A83D9129F000100341C97 /* CCMenuAdvanced_macAppDelegate.m in Sources */,
 				E0507118131760D700EAE33F /* HelloWorldLayer.m in Sources */,
 				6D78CBF113569FB8007F0032 /* main.m in Sources */,
+				6D78CC2E1356B8E9007F0032 /* DemoMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

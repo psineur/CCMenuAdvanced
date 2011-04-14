@@ -66,7 +66,7 @@
 {
 	CGSize winSize = [[CCDirector sharedDirector] winSize];
 	
-	_backMenuItem.anchorPoint = ccp(0.2f,1.0f);
+	_backMenuItem.anchorPoint = ccp(0.0f,1.0f);
 	_backMenuItem.position = ccp(0, winSize.height);
 	
 	[_background setContentSize: winSize ];

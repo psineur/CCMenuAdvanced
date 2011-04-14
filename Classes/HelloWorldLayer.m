@@ -9,6 +9,7 @@
 
 // Import the interfaces
 #import "HelloWorldLayer.h"
+#import "DemoMenu.h"
 
 // HelloWorldLayer implementation
 @implementation HelloWorldLayer
@@ -18,11 +19,12 @@
 	// 'scene' is an autorelease object.
 	CCScene *scene = [CCScene node];
 	
-	// 'layer' is an autorelease object.
-	HelloWorldLayer *layer = [HelloWorldLayer node];
+	// Add Demo Menu
+	DemoMenu *menu = [DemoMenu node];
+	menu.anchorPoint = menu.position = ccp(0,0);
 	
 	// add layer as a child to scene
-	[scene addChild: layer];
+	[scene addChild: menu];
 	
 	// return the scene
 	return scene;

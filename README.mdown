@@ -24,8 +24,15 @@ Demo features
 * Demonstrates also how to use CCMenuItemSpriteIndependent with Gimp & xcftools
 * contains xcf2sprites, [source](https://gist.github.com/886100 "xcf2sprites source")  original xcfinfo source: [xcftools](http://henning.makholm.net/software "Henning Makholm.net xcftools")
 
-TODO:
--------------
-* Rows and columns alignment with automatic contentSize set ( cause i use only vertical/horizontal alignment in iTraceur)
-* Other features you need ;)
+Developing Universal Mac/iPad/iPhone/Retina Menus
+--------------------------------------------------
+See commits history, starting from [this commit](https://github.com/psineur/CCMenuAdvanced/commit/6440ee09a59c40706c35780eda04812d4034b3e3 "commit") to know how exactly universal app can be developed from Mac to iOS and iOS with Retina.
+
+Blog post will be available within few days.
+
+
+Contribution
+--------------
+Feel free to use, ask, comment, fork, pull request or do whatever you want ;)
+
  

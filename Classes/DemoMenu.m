@@ -18,7 +18,7 @@
 {
 	if (self = [super init])
 	{
-		_backgroundLayer = [CCLayerColor layerWithColor: ccc4(0, 0, 0, 255) ];
+		_backgroundLayer = [CCLayerColor layerWithColor: ccc4(0x86, 0xbd, 0xb7, 255) ];
 		[self addChild:_backgroundLayer];
 		
 		[[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile: @"allDemoElements.plist"

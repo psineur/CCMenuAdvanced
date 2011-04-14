@@ -178,6 +178,34 @@
 		[self addChild: listButton];		
 		[self addChild: listButtonSelected];
 		
+		//fix retina scaleDown
+		
+		/*
+		 if (! trainingButton.textureAtlas.texture.isRetina )
+		*/
+		
+		//< wihout this line HD resources will be scaled, when it's not needed
+		//< isRetina doesn't exist in official cocos2d, so i will not use this check here
+		//< cause i know that these buttons doesn't have retinaResource and i can always 
+		//< upscale them with CONTENT_SCALE_FACTOR
+		//< You can got isRetina method from this pull request:
+		//< https://github.com/cocos2d/cocos2d-iphone/pull/50
+		
+		{
+			dummyButton1.scale *= CC_CONTENT_SCALE_FACTOR();		
+			dummyButton1Selected.scale *= CC_CONTENT_SCALE_FACTOR();
+			dummyMenuItem1.scale *= CC_CONTENT_SCALE_FACTOR();
+			
+			dummyButton2.scale *= CC_CONTENT_SCALE_FACTOR();		
+			dummyButton2Selected.scale *= CC_CONTENT_SCALE_FACTOR();
+			dummyMenuItem2.scale *= CC_CONTENT_SCALE_FACTOR();
+			
+			listButton.scale *= CC_CONTENT_SCALE_FACTOR();		
+			listButtonSelected.scale *= CC_CONTENT_SCALE_FACTOR();
+			listMenuItem.scale *= CC_CONTENT_SCALE_FACTOR();
+			
+		}
+		
 		
 		// Create CCMenuAdvanced
 		CCMenuAdvanced *menu = [CCMenuAdvanced menuWithItems: dummyMenuItem1, dummyMenuItem2, listMenuItem, nil];

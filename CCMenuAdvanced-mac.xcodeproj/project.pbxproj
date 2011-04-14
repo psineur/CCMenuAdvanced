@@ -12,6 +12,7 @@
 		6D78CC251356B376007F0032 /* allDemoElements.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D78CC211356B376007F0032 /* allDemoElements.png */; };
 		6D78CC261356B376007F0032 /* crackedGradient42.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 6D78CC221356B376007F0032 /* crackedGradient42.fnt */; };
 		6D78CC271356B376007F0032 /* crackedGradient42.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D78CC231356B376007F0032 /* crackedGradient42.png */; };
+		6D78CC291356B879007F0032 /* demoMenuWidgetLayout.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D78CC281356B879007F0032 /* demoMenuWidgetLayout.plist */; };
 		E01E6A3E121EDCD3001A484F /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01E6A3D121EDCD3001A484F /* ApplicationServices.framework */; };
 		E01E6B36121EDCED001A484F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E036A79E121B5C870037C5C6 /* QuartzCore.framework */; };
 		E01E6B49121EDCF4001A484F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E036A79C121B5C720037C5C6 /* OpenGL.framework */; };
@@ -201,6 +202,7 @@
 		6D78CC211356B376007F0032 /* allDemoElements.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = allDemoElements.png; path = Resources/allDemoElements.png; sourceTree = "<group>"; };
 		6D78CC221356B376007F0032 /* crackedGradient42.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = crackedGradient42.fnt; path = Resources/crackedGradient42.fnt; sourceTree = "<group>"; };
 		6D78CC231356B376007F0032 /* crackedGradient42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crackedGradient42.png; path = Resources/crackedGradient42.png; sourceTree = "<group>"; };
+		6D78CC281356B879007F0032 /* demoMenuWidgetLayout.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = demoMenuWidgetLayout.plist; path = Resources/demoMenuWidgetLayout.plist; sourceTree = "<group>"; };
 		E01E663D121CA00A001A484F /* libcocos2d.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcocos2d.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01E6A3D121EDCD3001A484F /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		E02A83D2129F000100341C97 /* CCMenuAdvanced_macAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMenuAdvanced_macAppDelegate.h; sourceTree = "<group>"; };
@@ -448,6 +450,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6D78CC281356B879007F0032 /* demoMenuWidgetLayout.plist */,
 				6D78CC201356B376007F0032 /* allDemoElements.plist */,
 				6D78CC211356B376007F0032 /* allDemoElements.png */,
 				6D78CC221356B376007F0032 /* crackedGradient42.fnt */,
@@ -848,6 +851,7 @@
 				6D78CC251356B376007F0032 /* allDemoElements.png in Resources */,
 				6D78CC261356B376007F0032 /* crackedGradient42.fnt in Resources */,
 				6D78CC271356B376007F0032 /* crackedGradient42.png in Resources */,
+				6D78CC291356B879007F0032 /* demoMenuWidgetLayout.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

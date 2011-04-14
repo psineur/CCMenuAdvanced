@@ -451,17 +451,21 @@
 
 - (BOOL)ccScrollWheel:(NSEvent *)theEvent
 {
-	CGPoint delta = ccp( - [theEvent deltaX], - [theEvent deltaY] );
-	
-	// fix scrolling speed if we are scaled
-	delta = ccp(delta.x / self.scaleX, delta.y / self.scaleY);
-	
-	// add delta
-	CGPoint newPosition = ccpAdd(self.position, delta );	
-	self.position = newPosition;
-	
-	// stay in externalBorders
-	[self fixPosition];
+	// scrolling is allowed only with non-zero boundaryRect
+	if (!CGRectIsNull(boundaryRect_))
+	{	
+		CGPoint delta = ccp( - [theEvent deltaX], - [theEvent deltaY] );
+		
+		// fix scrolling speed if we are scaled
+		delta = ccp(delta.x / self.scaleX, delta.y / self.scaleY);
+		
+		// add delta
+		CGPoint newPosition = ccpAdd(self.position, delta );	
+		self.position = newPosition;
+		
+		// stay in externalBorders
+		[self fixPosition];
+	}
 	
 	return NO;
 }

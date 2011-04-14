@@ -18,7 +18,7 @@
 
 - (id) initWithPropertyListName: (NSString *) propertyListName
 {
-	if (self = [super init])
+	if ( (self = [super init]) )
 	{
 		_elementsArray = [[[self class] loadArrayFromPropertyListWithName: propertyListName] retain];
 	}

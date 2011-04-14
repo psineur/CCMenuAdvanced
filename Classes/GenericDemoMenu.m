@@ -14,7 +14,7 @@
 
 - (id) init
 {
-	if (self = [super init])
+	if ( (self = [super init]) )
 	{
 		_background = [CCColorLayer layerWithColor:ccc4(0, 0, 0, 255)];
 		[self addChild:_background z:DEMO_MENU_Z_BACKGROUND];

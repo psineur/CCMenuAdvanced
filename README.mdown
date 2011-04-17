@@ -28,7 +28,9 @@ Developing Universal Mac/iPad/iPhone/Retina Menus
 --------------------------------------------------
 See commits history, starting from [this commit](https://github.com/psineur/CCMenuAdvanced/commit/6440ee09a59c40706c35780eda04812d4034b3e3 "commit") to know how exactly universal app can be developed from Mac to iOS and iOS with Retina.
 
-Blog post will be available within few days.
+Article about using CCMenuAdvanced for Universal Mac/iOS is available here: [parkourDev.blogspot.com](http://parkourdev.blogspot.com/2011/04/universal-macios-menus-with-cocos2d.html "Blogpost")
+
+Russian version of this can be found here: [Wiki/Sreenshots](https://github.com/psineur/CCMenuAdvanced/wiki/Универсальные-Mac-iOS-Retina-меню-с-Cocos2D "Screenshots" )
 
 
 Contribution

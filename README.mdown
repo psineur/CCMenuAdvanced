@@ -30,7 +30,7 @@ See commits history, starting from [this commit](https://github.com/psineur/CCMe
 
 Article about using CCMenuAdvanced for Universal Mac/iOS is available here: [parkourDev.blogspot.com](http://parkourdev.blogspot.com/2011/04/universal-macios-menus-with-cocos2d.html "Blogpost")
 
-Russian version of this can be found here: [Wiki/Sreenshots](https://github.com/psineur/CCMenuAdvanced/wiki/Универсальные-Mac-iOS-Retina-меню-с-Cocos2D "Screenshots" )
+Russian version of this can be found here: [wiki/Универсальные-Mac-iOS-Retina-меню-с-Cocos2D](https://github.com/psineur/CCMenuAdvanced/wiki/Универсальные-Mac-iOS-Retina-меню-с-Cocos2D "Screenshots" )
 
 
 Contribution

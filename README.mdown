@@ -1,3 +1,8 @@
+About this Repo
+==================
+This repository should be used only as example for Universal Cocos2D Menus blogpost.   
+Latest version of CCMenuAdvanced class can be found in [Cocos2d-iPhone-Extensions](https://github.com/cocos2d/cocos2d-iphone-extensions) repository.
+
 CCMenuAdvanced 
 ==================
 
